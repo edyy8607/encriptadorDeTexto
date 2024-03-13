@@ -216,5 +216,18 @@
   .encriptado {
     width: 80%;
     height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
   }
 }
