@@ -91,7 +91,7 @@ header {
   gap: 1rem;
 }
 
-.btn-encriptar {
+.btn-primario {
   align-items: center;
   justify-content: center;
   transition: 0.25s;
@@ -111,7 +111,7 @@ header {
   -o-transition: 0.25s;
 }
 
-.btn-desencriptar {
+.btn-secundario {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -132,8 +132,8 @@ header {
   color: #0a3871;
 }
 
-.btn-desencriptar:hover,
-.btn-encriptar:hover {
+.btn-secundario:hover,
+.btn-primario:hover {
   margin: 0.3%;
   width: 24.5%;
   padding: 1.8%;
@@ -196,6 +196,8 @@ header {
 
 .contenedor-resultado {
   background: #ff4;
+  width: 300px;
+  
 }
 
 /*responsive design */
@@ -232,14 +234,14 @@ header {
     top: 70%;
   }
 
-  .btn-encriptar,
-  .btn-desencriptar {
+  .btn-primario,
+  .btn-secundario {
     width: 48%;
     border-radius: 16px;
   }
 
-  .btn-encriptar:hover,
-  .btn-desencriptar:hover {
+  .btn-primario:hover,
+  .btn-secundario:hover {
     margin: 0.3%;
     width: 47.5%;
     padding: 1.8%;
