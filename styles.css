@@ -3,20 +3,38 @@
   padding: 0;
 }
 
+body {
+  background: #f3f5fc;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+  
+}
+
+.logo {
+  /* height: 50px; */
+}
+
 .container {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  background: #f3f5fc;
+  height: 80vh;
+  background: #f3f;
 }
 
 .texto {
   position: absolute;
   width: 42%;
-  height: 60%;/*este es el tamañño del texto*/
+  height: 60%;
+  /*este es el tamañño del texto*/
   left: 12%;
   top: 15%;
   border: none;
+  cursor: pointer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -30,7 +48,7 @@
 }
 
 .texto:focus,
-.texto:active{
+.texto:active {
   border: none;
   outline: none;
 }
@@ -52,7 +70,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 150%;/*el tamaño del  texto en la imagen*/
+  line-height: 150%;
+  /*el tamaño del  texto en la imagen*/
   color: #495057;
   opacity: 0.8;
   flex: none;
@@ -69,11 +88,13 @@
   width: 80%;
   left: 12%;
   top: 82%;
+  gap: 1rem;
 }
 
 .btn-encriptar {
   align-items: center;
   justify-content: center;
+  transition: 0.25s;
   padding: 2%;
   gap: 8px;
   width: 25%;
@@ -84,12 +105,17 @@
   line-height: 19px;
   text-align: center;
   color: #fff;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
 }
 
 .btn-desencriptar {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  transition: 0.25s;
   align-items: flex-start;
   justify-content: center;
   padding: 2%;
@@ -168,6 +194,10 @@
   top: 15%;
 }
 
+.contenedor-resultado {
+  background: #ff4;
+}
+
 /*responsive design */
 @media (max-width: 57.5em) {
   .container {
@@ -202,12 +232,14 @@
     top: 70%;
   }
 
-  .btn-encriptar, .btn-desencriptar {
+  .btn-encriptar,
+  .btn-desencriptar {
     width: 48%;
     border-radius: 16px;
   }
 
-  .btn-encriptar:hover,  .btn-desencriptar:hover {
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
     margin: 0.3%;
     width: 47.5%;
     padding: 1.8%;
